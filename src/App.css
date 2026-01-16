@@ -7,12 +7,13 @@
     flex-wrap: wrap;
     width: 100vw;
     height: 50px;
-    background: #003f91; opacity: 0.65;
+    background: rgba(0, 63, 145, 0.65);
     border-bottom: 1px solid #67d8fa;
 }
 
 .instagram {
     display: flex;
+    font-size: 20px;
     align-items: center;
     margin:0 auto 0 auto;
     gap: 8px;
@@ -25,21 +26,22 @@
     height: 25px;
 }
 
-.nav {
-    display: flex;
-    background: #003f91; opacity: 0.65;
-    width: 100vw;
-    z-index: 100;
-}
 .nav-container{
     display: flex;
     align-items: center;
     width: 100vw;
-    height: 60px;
+    height: 80px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-right: 120px;
-    margin-left: 125px;
+    justify-content: space-between;
+}
+.nav {
+    position: fixed;
+    top: 50px;
+    display: flex;
+    background: rgba(0, 63, 145, 0.65);
+    width: 100vw;
+    z-index: 100;
 }
 
 .nav-logo {
@@ -48,14 +50,135 @@
 }
 .logo {
     position: relative;
-    margin-top: 15px;
     align-self: center;
     z-index: 100;
-    width: 120px;
-    height: 120px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
+    margin-left: 15px;
 }
 
-.kredit, .prava {
+nav.nav ul.nav-menu {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+    padding: 0;
+}
+nav.nav ul.nav-menu li {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav.nav ul.nav-menu li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255);
+    font-size: 1.2em;
+}
+nav.nav ul.nav-menu li a:hover {
+    color: rgb(0, 208, 255);
+    font-weight: 800;
+}
+.nav-btn {
+    background: rgba(103, 216, 250, 0.65);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 63, 145, 0.3);
+    transition: all 0.3s ease;
+}
+.nav-btn:hover {
+    background: rgba(18, 57, 200, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 63, 145, 0.5);
+}
+
+.nav-menu-mobile {
     display: none;
 }
+
+.footer {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    font-size: 1em;
+    width: 100vw;
+    background: rgba(0, 63, 145, 0.65);
+    padding: 20px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.footer-my, .footer-formular, .footer-srazy, .footer-followus {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer h4 {
+    font-size: 1em;
+    margin: 0 0 8px 0;
+    letter-spacing: 0.01em;
+    color: white;
+    font-weight: 700;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1em;
+    line-height: 1.4;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #67d8fa;
+}
+
+.footer-instagram {
+    width: 28px;
+    height: 28px;
+    margin-top: 5px;
+}
+
+.footer-bottom {
+    position: fixed;
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 40px;
+    border-top: 1px solid #67d8fa;
+}
+
+.kredit, .love {
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.love {
+    margin-right: 10px;
+}
+.prava {
+    color: rgba(0, 0, 0, 0.7);
+}
+.main { margin-top: 110px; }

@@ -15,12 +15,17 @@
 
 *{
   font-family: var(--Font-A), sans-serif;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 body {
   margin: 0;
   display: flex;
   place-items: center;
-  width: 100vw;
+  height: 100vh;
+}
+
+html, #root {
   height: 100vh;
 }

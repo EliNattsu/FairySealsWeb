@@ -8,11 +8,26 @@ import Cleni from './pages/cleni.jsx';
 import Galerie from './pages/Galerie.jsx';
 import Sety from './pages/Sety.jsx';
 import Home from './pages/Home.jsx';
+import React, {useEffect, useState} from 'react';
+import { useLocation } from 'react-router-dom';
 
 function App() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen((prev) => !prev);
+    };
+
+    const closeMenu = () => setIsMenuOpen(false);
+
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
     return (
-    <div>
-      <header>
+    <div className="app-wrapper">
+        <header className='header-fixed'>
         <div>
           <div className="topbar">
               <a href="https://www.instagram.com/fairy.seals/"
@@ -25,8 +40,21 @@ function App() {
               <nav className="nav">
                   <div className="nav-container">
                       <div className="nav-logo">
-                          <Link to='/'><img src={logo} alt="Logo" className='logo'/></Link>
+                          <Link to="/" onClick={closeMenu}>
+                              <img src={logo} alt="Logo" className="logo" />
+                          </Link>
                       </div>
+
+                      <button
+                          className={`hamburger ${isMenuOpen ? 'is-open' : ''}`}
+                          onClick={toggleMenu}
+                          aria-label="Otevřít menu"
+                          aria-expanded={isMenuOpen}
+                      >
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </button>
 
                       <ul className="nav-menu">
                           <li><Link to="/oClubu">O nás</Link></li>
@@ -35,20 +63,26 @@ function App() {
                           <li><Link to="/Sety">Naše sety</Link></li>
                           <li><Link to="/Galerie">Galerie</Link></li>
                           <li>
-                              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWHOhHePHAYisG0d9Vhou0dTSfHqQKOiuKfTSZ8DL1IzlgLQ/viewform?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnh1BPWnaPmxayosGyg5jnvHYxLFP9MI7Ha1_LvuULfj3rb2w_yV_Xg7OwrVc_aem_ksnuq_P47vGwDPjJZ8INTg" className="nav-btn" target="_blank" rel="noopener noreferrer">
+                              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWHOhHePHAYisG0d9Vhou0dTSfHqQKOiuKfTSZ8DL1IzlgLQ/viewform?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnh1BPWnaPmxayosGyg5jnvHYxLFP9MI7Ha1_LvuULfj3rb2w_yV_Xg7OwrVc_aem_ksnuq_P47vGwDPjJZ8INTg"
+                                 className="nav-btn"
+                                 target="_blank"
+                                 rel="noopener noreferrer">
                                   Přidej se!
                               </a>
                           </li>
                       </ul>
 
-                      <ul className="nav-menu-mobile">
-                          <li><Link to="/oClubu">O nás</Link></li>
-                          <li><Link to="/FAQ">FAQ</Link></li>
-                          <li><Link to="/cleni">Naše členky</Link></li>
-                          <li><Link to="/Sety">Naše sety</Link></li>
-                          <li><Link to="/Galerie">Galerie</Link></li>
+                      <ul className={`nav-menu-mobile ${isMenuOpen ? 'show' : ''}`}>
+                          <li><Link to="/oClubu" onClick={closeMenu}>O nás</Link></li>
+                          <li><Link to="/FAQ" onClick={closeMenu}>FAQ</Link></li>
+                          <li><Link to="/cleni" onClick={closeMenu}>Naše členky</Link></li>
+                          <li><Link to="/Sety" onClick={closeMenu}>Naše sety</Link></li>
+                          <li><Link to="/Galerie" onClick={closeMenu}>Galerie</Link></li>
                           <li>
-                              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWHOhHePHAYisG0d9Vhou0dTSfHqQKOiuKfTSZ8DL1IzlgLQ/viewform?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnh1BPWnaPmxayosGyg5jnvHYxLFP9MI7Ha1_LvuULfj3rb2w_yV_Xg7OwrVc_aem_ksnuq_P47vGwDPjJZ8INTg" className="nav-btn" target="_blank" rel="noopener noreferrer">
+                              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWHOhHePHAYisG0d9Vhou0dTSfHqQKOiuKfTSZ8DL1IzlgLQ/viewform?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnh1BPWnaPmxayosGyg5jnvHYxLFP9MI7Ha1_LvuULfj3rb2w_yV_Xg7OwrVc_aem_ksnuq_P47vGwDPjJZ8INTg"
+                                 target="_blank"
+                                 rel="noopener noreferrer"
+                                 onClick={closeMenu}>
                                   Přidej se!
                               </a>
                           </li>

@@ -49,7 +49,7 @@ const clenkyData = [
         id: 5,
         jmeno: "Michelle Yellowhurricane - Miška",
         ig: "https://www.instagram.com/michelle_yellowhurricane/",
-        bio: "Něco málo o mně? Mezi moje oblíbené aktivity a koníčky patří hraní her 😄. Spíš mám ráda chillové hry, jako je SSO nebo TFT, i když někdy si zahraji i LoLka, což už úplně tak chill není.\n" +
+        bio: "Něco málo o mně? Mezi moje oblíbené aktivity a koníčky patří hraní her 😄. Spíš mám ráda chillové hry, jako je SSO nebo TFT, i když někdy si zahraji i LoLko, což už úplně tak chill není.\n" +
             "Hrozně mě baví také experimentovat s makeupem, protože při tom člověk vždycky vypne a nemusí přemýšlet nad ničím jiným 😄. Někdy si k tomu pustím i true crime podcasty, což se dá taky považovat za můj malý „koníček“ – ráda poslouchám tyhle typy pořadů.\n",
         img: Miska,
         bg: "#d1e4ff"

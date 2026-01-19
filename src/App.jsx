@@ -1,7 +1,7 @@
 import './App.css'
 import instagram from './assets/Icons/instagram.svg'
 import logo from './assets/Images/logo.jpg'
-import {Link, HashRouter as Router, Routes, Route } from 'react-router-dom';
+import {Link, Routes, Route } from 'react-router-dom';
 import OClubu from './pages/oClubu.jsx';
 import FAQ from './pages/FAQ.jsx';
 import Cleni from './pages/cleni.jsx';
@@ -26,7 +26,6 @@ function App() {
     }, [pathname]);
 
     return (
-        <Router basename="/FairySealsWeb">
     <div className="app-wrapper">
         <header className='header-fixed'>
         <div>
@@ -149,7 +148,6 @@ function App() {
             </div>
         </footer>
     </div>
-        </Router>
     )
 }
 export default App

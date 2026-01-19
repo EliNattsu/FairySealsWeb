@@ -77,7 +77,7 @@ const clenkyData = [
 const Cleni = () => {
     return (
         <div className="cleni-page">
-            <h1 className="page-title-cleni">Naši členi</h1>
+            <h1 className="page-title-cleni">Naše členky</h1>
 
             {clenkyData.map((clen, index) => (
                 <section key={clen.id} className="member-row" style={{ backgroundColor: clen.bg }}>

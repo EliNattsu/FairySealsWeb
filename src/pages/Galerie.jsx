@@ -2,7 +2,7 @@ import React from 'react';
 
 const allImages = Array.from({ length: 55 }, (_, i) => ({
     id: i + 1,
-    src: `/Images/g${i + 1}.png`,
+    src: `Images/g${i + 1}.png`,
     alt: `Galerie foto ${i + 1}`
 }));
 

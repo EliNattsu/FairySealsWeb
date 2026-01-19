@@ -1,7 +1,7 @@
 import './App.css'
 import instagram from './assets/Icons/instagram.svg'
 import logo from './assets/Images/logo.jpg'
-import {Link, Routes, Route } from 'react-router-dom';
+import {Link, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import OClubu from './pages/oClubu.jsx';
 import FAQ from './pages/FAQ.jsx';
 import Cleni from './pages/cleni.jsx';
@@ -26,6 +26,7 @@ function App() {
     }, [pathname]);
 
     return (
+        <Router>
     <div className="app-wrapper">
         <header className='header-fixed'>
         <div>
@@ -94,7 +95,8 @@ function App() {
 
         <main className="main">
             <Routes>
-                <Route path="/FairySealsWeb" element={<Home />} />
+                <Route path="/" element={<Home />} />
+                <Route index element={<Home />} />
                 <Route path="/oClubu" element={<OClubu />} />
                 <Route path="/FAQ" element={<FAQ />} />
                 <Route path="/cleni" element={<Cleni />} />
@@ -148,6 +150,7 @@ function App() {
             </div>
         </footer>
     </div>
+            </Router>
     )
 }
 export default App

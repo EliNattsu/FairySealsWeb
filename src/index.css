@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Poppins';
-  src: url('./assets/fonts/Poppins-Light.ttf');
+  src: url('./assets/Fonts/Poppins-Light.ttf');
 }
 
 @font-face {
   font-family: 'Plante';
-  src: url('./assets/fonts/Plante.ttf');
+  src: url('./assets/Fonts/Plante.ttf');
 }
 
 :root {

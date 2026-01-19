@@ -94,12 +94,12 @@ function App() {
 
         <main className="main">
             <Routes>
-                <Route path="/FairySealsWeb" element={<Home />} />
-                <Route path="/oClubu" element={<OClubu />} />
-                <Route path="/FAQ" element={<FAQ />} />
-                <Route path="/cleni" element={<Cleni />} />
-                <Route path="/Galerie" element={<Galerie />} />
-                <Route path="/Sety" element={<Sety />} />
+                <Route path="/#/FairySealsWeb" element={<Home />} />
+                <Route path="/#/oClubu" element={<OClubu />} />
+                <Route path="/#/FAQ" element={<FAQ />} />
+                <Route path="/#/cleni" element={<Cleni />} />
+                <Route path="/#/Galerie" element={<Galerie />} />
+                <Route path="/#/Sety" element={<Sety />} />
             </Routes>
         </main>
 

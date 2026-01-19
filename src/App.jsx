@@ -94,7 +94,7 @@ function App() {
 
         <main className="main">
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/FairySealsWeb" element={<Home />} />
                 <Route path="/oClubu" element={<OClubu />} />
                 <Route path="/FAQ" element={<FAQ />} />
                 <Route path="/cleni" element={<Cleni />} />

@@ -124,16 +124,16 @@ nav.nav ul.nav-menu li a:hover {
     display: flex;
     flex-direction: column;
     bottom: 40px;
-    font-size: 1em;
+    font-size: 1.7em;
     width: 100%;
     background: rgba(102, 158, 225);
-    padding: 15px 0 0 0;
+    padding: 20px 0 0 0;
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .footer-top {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
     max-width: 1500px;
     margin-bottom: 15px;
@@ -231,6 +231,7 @@ nav.nav ul.nav-menu li a:hover {
     display: none;
     position: absolute;
     top: 130px;
+    font-size: 20px;
     right: 0;
     left: 0;
     background: rgba(102, 158, 225);
@@ -239,7 +240,7 @@ nav.nav ul.nav-menu li a:hover {
     padding: 15px 0;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     z-index: 99;
 }
 

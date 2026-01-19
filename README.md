@@ -1,16 +1,30 @@
-# React + Vite
+# Fairy Seals Web project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Jednoduchý, responzivní web pro Star Stable klub, vytvořený v Reactu (Vite). Stránka obsahuje informace o klubu, členkách, FAQ, galerii a setech.
 
-Currently, two official plugins are available:
+# Použité technologie
+React + Vite – rychlý vývoj SPA.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+CSS – ručně psané styly, responzivní layout (flexbox, media queries).
 
-## React Compiler
+SVG ikony – Instagram ikona u členek s odkazem na jejich profily.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Struktura stránek
+# O klubu
+Základní informace o klubu, filozofie, vizuálně sladěné se zbytkem webu.
 
-## Expanding the ESLint configuration
+# FAQ
+Nejčastější dotazy a odpovědi, přehledná sekce pro nové členy.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Naše členky
+Každá členka má:
+fotku, jméno a SVG ikonku Instagramu (odkaz na její profil), krátký text „něco o člence“.
+
+# Galerie
+Mřížka s větším počtem fotek (cca 55).
+
+# Sety
+Představení jednotlivých setů.
+
+# Autor
+Eliška Hrdá – školní projekt snapshot 0.0.1

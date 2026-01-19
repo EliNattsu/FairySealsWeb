@@ -2,6 +2,8 @@
 
 Jednoduchý, responzivní web pro Star Stable klub, vytvořený v Reactu (Vite). Stránka obsahuje informace o klubu, členkách, FAQ, galerii a setech.
 
+https://fairy-seals-web.vercel.app/
+
 # Použité technologie
 React + Vite – rychlý vývoj SPA.
 

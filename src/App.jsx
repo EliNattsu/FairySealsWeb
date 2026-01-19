@@ -26,6 +26,7 @@ function App() {
     }, [pathname]);
 
     return (
+        <Router basename="/FairySealsWeb">
     <div className="app-wrapper">
         <header className='header-fixed'>
         <div>
@@ -148,7 +149,7 @@ function App() {
             </div>
         </footer>
     </div>
+        </Router>
     )
 }
-
 export default App
